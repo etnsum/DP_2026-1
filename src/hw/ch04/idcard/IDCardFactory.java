@@ -1,0 +1,25 @@
+package hw.ch04.idcard;
+
+import hw.ch04.framework.Factory;
+import hw.ch04.framework.Product;
+
+public class IDCardFactory extends Factory {
+
+    private String baseDate;   // 발급 날짜
+    private int serial = 1;    // 카드 번호 자동 증가
+
+    // 생성자 추가
+    public IDCardFactory(String baseDate) {
+        this.baseDate = baseDate;
+    }
+
+    @Override
+    protected Product createProduct(String owner) {
+        return new IDCard(owner, serial++, baseDate);
+    }
+
+    @Override
+    protected void registerProduct(Product product) {
+        System.out.println(product + "을 등록했습니다.");
+    }
+}

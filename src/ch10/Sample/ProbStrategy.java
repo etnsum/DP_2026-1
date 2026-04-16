@@ -4,8 +4,8 @@ import java.util.Random;
 
 public class ProbStrategy implements Strategy {
     private Random random;
-    private int prevHandValue = 0;
-    private int currentHandValue = 0;
+    private int prevHandValue = 0; // 이전에 낸 손의 값
+    private int currentHandValue = 0; // 바로 전에 낸 손의 값
     private int[][] history = {
         { 1, 1, 1, },
         { 1, 1, 1, },

@@ -9,6 +9,9 @@ public class Main {
 
         mbox1.createCopy().use("Hello, world.");
 
+        product p1 = manager.create("star box");
+        p1.use("Hello, world.");
+
 
     }
 }

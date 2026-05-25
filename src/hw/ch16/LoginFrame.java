@@ -26,7 +26,7 @@ public class LoginFrame extends Frame implements ActionListener, Mediator {
         setBackground(Color.lightGray);
         setLayout(new GridLayout(4, 2));
 
-        // Colleague 생성한
+        // Colleague 생성함
         createColleagues();
 
 
